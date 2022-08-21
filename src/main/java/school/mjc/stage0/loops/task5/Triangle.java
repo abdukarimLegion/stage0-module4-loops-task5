@@ -2,11 +2,13 @@ package school.mjc.stage0.loops.task5;
 
 public class Triangle {
     public void printTriangle(int cathetusLength) {
-        for(int y =0; y<cathetusLength; y++){
-            System.out.println(" ");
-            for(int x =0; x<y; x++){
-                System.out.print("8");
+        for (int i = 0; i < cathetusLength; i++) {
+            for (int j = 0; j < cathetusLength; j++) {
+                if (j <= i)
+                    System.out.print(8);
+                else System.out.print(" ");
             }
+            System.out.println();
         }
     }
 
